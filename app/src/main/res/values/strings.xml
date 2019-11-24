@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Find_me_a_recipe</string>
+    <string name="enter_the_ingredients_you_have">Enter your ingredients</string>
+    <string name="find_me_a_recipe">Find me a recipe</string>
+    <string name="ingredients_hint">separate your ingredients by a comma</string>
+    <string name="background_pic">picture</string>
+    <string name="todo">TODO</string>
+    <string name="willing_to_buy_a_couple_of_ingredients">Willing to buy a couple of ingredients?</string>
+
+    <string-array name="course">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+    </string-array>
+
+</resources>

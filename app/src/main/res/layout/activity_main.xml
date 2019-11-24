@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:style="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity"
+
+        >
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#add8e6"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/background_pic"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginBottom="15dp"
+                      android:layout_marginStart="20dp"
+                      android:layout_marginEnd="20dp">
+            <TextView
+                    android:id="@+id/Text1"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/enter_the_ingredients_you_have"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="0dp"
+                    android:textColor="#728BD4"
+                    android:fontFamily="@font/montserrat"
+                    android:shadowColor="#72bcd4"
+                    android:textStyle="bold"/>
+
+            <android.support.v7.widget.SearchView
+                    android:id="@+id/Ingredients"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="center"
+
+                    style:iconifiedByDefault="false"
+                    android:ems="10"
+                    android:hint="@string/ingredients_hint"
+                    android:textColorHint="#728BD4"
+                    android:textColor="#ffffff"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    style:queryHint="@string/enter_the_ingredients_you_have"
+            />
+
+            <Spinner android:id="@+id/meal"
+                     android:pointerIcon="all_scroll"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="25dp"
+                     android:layout_marginBottom="1dp"
+                     android:layout_marginStart="70dp"
+                     android:layout_marginEnd="70dp"
+                     android:spinnerMode="dropdown"
+                     android:entries="@array/course"
+                     android:popupBackground="@color/colorPrimary"
+                     android:dropDownWidth="match_parent"
+                     android:contextClickable="true"
+                    />
+            <CheckBox
+                    android:text="@string/willing_to_buy_a_couple_of_ingredients"
+                    android:layout_marginBottom="104dp"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginTop="30dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#728BD4"
+                    android:textColorHighlight="@color/colorPrimary"/>
+
+            <Button
+                    android:id="@+id/Find_rec"
+                    android:text="@string/find_me_a_recipe"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="102dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="#728BD4"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="40dp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#BAFFFFFF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="Dropdowncolor">#C9AF9D87</color>
+    <color name="hintColors">#945125</color>
+    <color name="backk">#8AAF9D87</color>
+</resources>
